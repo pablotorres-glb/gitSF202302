@@ -25,11 +25,28 @@
     </processMetadataValues>
     <processType>AutoLaunchedFlow</processType>
     <recordUpdates>
+        <description>Cambia el origen del caso</description>
+        <name>Cambiar_origen</name>
+        <label>Cambiar origen</label>
+        <locationX>176</locationX>
+        <locationY>455</locationY>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Test</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
         <description>Cambia el estado del caso a cerrado</description>
         <name>Cerrar_caso</name>
         <label>Cerrar caso</label>
         <locationX>176</locationX>
         <locationY>335</locationY>
+        <connector>
+            <targetReference>Cambiar_origen</targetReference>
+        </connector>
         <inputAssignments>
             <field>Status</field>
             <value>

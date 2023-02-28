@@ -8,14 +8,14 @@
     <columns>CASES.PRIORITY</columns>
     <filterScope>Mine</filterScope>
     <filters>
-        <field>CASES.CLOSED</field>
-        <operation>equals</operation>
-        <value>0</value>
-    </filters>
-    <filters>
         <field>CASES.ORIGIN</field>
         <operation>equals</operation>
         <value>Email,Web</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>Escalated,Closed</value>
     </filters>
     <label>Cases to review</label>
 </ListView>
