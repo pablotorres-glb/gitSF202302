@@ -6,7 +6,7 @@
     <columns>CASES.SUBJECT</columns>
     <columns>CASES.STATUS</columns>
     <columns>CASES.PRIORITY</columns>
-    <filterScope>Mine</filterScope>
+    <filterScope>Everything</filterScope>
     <filters>
         <field>CASES.ORIGIN</field>
         <operation>equals</operation>
@@ -15,7 +15,7 @@
     <filters>
         <field>CASES.STATUS</field>
         <operation>equals</operation>
-        <value>Escalated,Closed</value>
+        <value>New,Closed</value>
     </filters>
     <label>Cases to review</label>
 </ListView>
